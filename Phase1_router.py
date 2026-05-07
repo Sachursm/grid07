@@ -38,6 +38,7 @@ groq_api_key = os.getenv("GROQ_API_KEY")
 # This converts text → vector numbers
 
 EMBED_MODEL = "all-MiniLM-L6-v2"
+
 _model = None 
 def get_embedding_function():
     global _model
@@ -69,6 +70,7 @@ personas = {
 # Create a chromadb client
 # Create a collection called "bot_personas"
 _client = None
+
 def get_chroma_client():
     global _client
     if _client is None:
