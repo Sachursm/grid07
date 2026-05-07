@@ -128,8 +128,9 @@ for bot_id, persona_text in personas.items():
 #       n_results=3,
 #       include=["distances"]
 #   )
+threshold = 0.20 #fix: lowered threshold to 0.20 because all-MiniLM-L6-v2 similarity scores range between 0.2-0.5, default 0.85 was too strict and returning empty matche
 
-def route_post_to_bots(post_content: str, threshold: float = 0.20) -> list:
+def route_post_to_bots(post_content: str, threshold: float = threshold) -> list:
     """
     Routes a post to relevant bots based on persona similarity.
     
