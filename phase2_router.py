@@ -2,7 +2,6 @@ from langgraph.graph import StateGraph, START, END
 from typing import TypedDict
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage
-from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer
 from dotenv import load_dotenv
 import os
 import warnings
@@ -76,6 +75,8 @@ graph.add_edge("write_post", END)
 app = graph.compile()
 
 if __name__ == "__main__":
+    import json
+
     bots = [
         "Bot A (Tech Maximalist): I believe AI and crypto will solve all human problems.",
         "Bot B (Doomer/Skeptic): I believe tech monopolies are destroying society.",
@@ -90,4 +91,8 @@ if __name__ == "__main__":
             "post_content": ""
         })
         print(f"\n--- {bot[:5]} ---")
-        print("Post:", result["post_content"])
+        print(json.dumps({
+                        "bot_id": bot,
+                        "topic": result["topic"],
+                        "post_content": result["post_content"]
+                    }, indent=2))
