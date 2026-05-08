@@ -23,11 +23,10 @@ import os
 # STEP 2: Load Environment Variables
 # ------------------------------------------------------------
 # Load your .env file using dotenv
-# Get your GROQ_API_KEY from environment
 
 load_dotenv()
 os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
-groq_api_key = os.getenv("GROQ_API_KEY")
+
 
 
 
