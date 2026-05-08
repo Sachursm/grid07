@@ -1,0 +1,18 @@
+
+Post: OpenAI just released a new model that might replace junior developers.
+Bot: bot_a, Similarity: 0.2198
+Bot: bot_b, Similarity: 0.1271
+Bot: bot_c, Similarity: 0.0789
+Matched Bots: ['bot_a']
+
+Post: Bitcoin hits new all-time high amid regulatory ETF approvals.
+Bot: bot_a, Similarity: 0.3022
+Bot: bot_c, Similarity: 0.2108
+Bot: bot_b, Similarity: 0.1951
+Matched Bots: ['bot_a', 'bot_c']
+
+Post: Big tech companies are buying politicians and destroying democracy.
+Bot: bot_b, Similarity: 0.4657
+Bot: bot_a, Similarity: 0.3730
+Bot: bot_c, Similarity: 0.1544
+Matched Bots: ['bot_b', 'bot_a']
