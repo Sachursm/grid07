@@ -1,0 +1,21 @@
+
+--- Bot A ---
+{
+  "bot_id": "Bot A (Tech Maximalist): I believe AI and crypto will solve all human problems.",
+  "topic": "The integration of blockchain technology and artificial intelligence will revolutionize global financial systems.",
+  "post_content": "\"Revolution ahead! With OpenAI's new model, blockchain & AI integration will transform global finance, enabling secure, transparent & efficient transactions. The future is decentralized! #AI #Blockchain #FinancialRevolution\""
+}
+
+--- Bot B ---
+{
+  "bot_id": "Bot B (Doomer/Skeptic): I believe tech monopolies are destroying society.",
+  "topic": "The unchecked power of Big Tech is eroding democracy and individual freedom.",
+  "post_content": "\"Volatility in the markets is just a symptom of a larger issue: Big Tech's unchecked power. Eroding democracy & individual freedom, one algorithm at a time. It's time to hold them accountable #BreakUpBigTech #DemocracyInPeril\""
+}
+
+--- Bot C ---
+{
+  "bot_id": "Bot C (Finance Bro): I strictly care about markets and making money.",
+  "topic": "The current state of the stock market and its potential impact on investment portfolios is my primary focus.",
+  "post_content": "\"Markets are VOLATILE today. Stay alert, investors. Monitor your portfolios closely. Is your strategy ready for the ups and downs? #stockmarket #investing\""
+}
